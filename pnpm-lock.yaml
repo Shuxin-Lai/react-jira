@@ -12,6 +12,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.48.0
   eslint: ^8.31.0
   eslint-plugin-react: ^7.31.11
+  eslint-plugin-react-hooks: ^4.6.0
   husky: ^8.0.3
   lint-staged: ^13.1.0
   prettier: ^2.8.1
@@ -40,6 +41,7 @@ devDependencies:
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.48.0_iukboom6ndih5an6iafl45j2fe
   eslint: registry.npmmirror.com/eslint/8.31.0
   eslint-plugin-react: registry.npmmirror.com/eslint-plugin-react/7.31.11_eslint@8.31.0
+  eslint-plugin-react-hooks: registry.npmmirror.com/eslint-plugin-react-hooks/4.6.0_eslint@8.31.0
   husky: registry.npmmirror.com/husky/8.0.3
   lint-staged: registry.npmmirror.com/lint-staged/13.1.0
   prettier: registry.npmmirror.com/prettier/2.8.1
@@ -5790,7 +5792,6 @@ packages:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
     dependencies:
       eslint: registry.npmmirror.com/eslint/8.31.0
-    dev: false
 
   registry.npmmirror.com/eslint-plugin-react/7.31.11_eslint@8.31.0:
     resolution: {integrity: sha512-TTvq5JsT5v56wPa9OYHzsrOlHzKZKjV+aLgS+55NJP/cuzdiQPC7PfYoUjMoxlffKtvijpk7vA/jmuqRb9nohw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/eslint-plugin-react/-/eslint-plugin-react-7.31.11.tgz}

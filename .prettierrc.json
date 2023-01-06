@@ -1,6 +1,7 @@
 {
   "semi": false,
   "singleQuote": false,
+  "quoteProps": "consistent",
   "endOfLine": "lf",
   "jsxSingleQuote": false,
   "trailingComma": "all",

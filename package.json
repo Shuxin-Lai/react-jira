@@ -17,6 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "prepare": "husky install",
     "dev": "npm run start",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -45,6 +46,12 @@
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "eslint": "^8.31.0",
-    "eslint-plugin-react": "^7.31.11"
+    "eslint-plugin-react": "^7.31.11",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,md}": "prettier --write"
   }
 }

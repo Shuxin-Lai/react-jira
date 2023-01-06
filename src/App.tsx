@@ -1,13 +1,17 @@
-import { useCallback } from "react"
+import { useSelector, useDispatch } from "react-redux"
+import { RootState } from "./store"
+import { increment } from "./store/features/counterSlice"
 
 function App() {
-  const handleClick = useCallback(() => {
-    alert("ok")
-  }, [])
+  const count = useSelector((state: RootState) => state.counter.value)
+  const dispatch = useDispatch()
 
   return (
     <div className="App">
-      <button onClick={handleClick}>click me</button>
+      <div>count: {count}</div>
+      <div>
+        <button onClick={() => dispatch(increment())}>increment</button>
+      </div>
     </div>
   )
 }

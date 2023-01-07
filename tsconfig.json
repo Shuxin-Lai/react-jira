@@ -18,6 +18,57 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@": [
+        "."
+      ],
+      "@components": [
+        "components/index.ts"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@utils": [
+        "utils/index.ts"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@hooks": [
+        "hooks/index.ts"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@constants": [
+        "constants/index.ts"
+      ],
+      "@constants/*": [
+        "constants/*"
+      ],
+      "@layouts": [
+        "layouts/index.ts"
+      ],
+      "@layouts/*": [
+        "layouts/*"
+      ],
+      "@apis": [
+        "apis/index.ts"
+      ],
+      "@apis/*": [
+        "apis/*"
+      ],
+      "@enums": [
+        "enums/index.ts"
+      ],
+      "@enums/*": [
+        "enums/*"
+      ],
+    },
     "jsx": "react-jsx"
   },
   "include": [

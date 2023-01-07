@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouteObject, Outlet } from "react-router-dom"
-import { DefaultLayout } from "../layouts/DefaultLayout"
-import { NotFound } from "../pages/404"
-import { ErrorPage } from "../pages/ErrorPage"
-import { Home } from "../pages/Home"
-import { Profile } from "../pages/Profile"
-import { isNil } from "../utils"
+import { Home } from "@pages/Home"
+import { Profile } from "@pages/Profile"
+import { isNil } from "@utils"
+import { DefaultLayout } from "@layouts/DefaultLayout"
+import { ErrorPage } from "@pages/ErrorPage"
+import { NotFound } from "@pages/404"
 
 function createRouteObject(obj: RouteObject): RouteObject {
   if (isNil(obj.caseSensitive)) {

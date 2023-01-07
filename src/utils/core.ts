@@ -7,5 +7,6 @@ export {
   merge as deepMerge,
   clone,
   cloneDeep,
+  isObject,
 } from "lodash-es"
 export const shallowMerge = Object.assign

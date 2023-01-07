@@ -7,11 +7,17 @@ import { Provider } from "react-redux"
 import { RouterProvider } from "react-router-dom"
 import { router } from "./router"
 
+import { ConfigProvider } from "antd"
+import zhCN from "antd/locale/zh_CN"
+import { theme } from "theme"
+
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <RouterProvider router={router}></RouterProvider>
+      <ConfigProvider locale={zhCN} theme={theme}>
+        <RouterProvider router={router}></RouterProvider>
+      </ConfigProvider>
     </Provider>
   </React.StrictMode>,
 )

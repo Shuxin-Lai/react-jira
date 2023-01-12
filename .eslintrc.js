@@ -18,6 +18,7 @@ module.exports = {
   plugins: ["react", "@typescript-eslint"],
   rules: {
     "react/react-in-jsx-scope": "off",
+    "no-debugger": "off",
   },
   settings: {
     react: {

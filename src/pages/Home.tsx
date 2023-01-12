@@ -1,13 +1,20 @@
-import { useMessage } from "@hooks"
 import { useTheme } from "@hooks/useTheme"
 import { Button } from "antd"
+import { useDispatch, useSelector } from "react-redux"
+import { RootState } from "store"
+import { fetchUserById } from "store/features/authSlice"
 
 export function Home() {
-  const [messageApi, contextHolder] = useMessage()
+  // const [messageApi, contextHolder] = useMessage()
+
+  const dispatch = useDispatch()
+  const { user: user } = useSelector((state: RootState) => state.auth)
+
   const token = useTheme()
   const handleClick = () => {
-    console.log("click")
-    messageApi.success("ok")
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    dispatch(fetchUserById())
   }
   return (
     <div>
@@ -18,8 +25,8 @@ export function Home() {
       <Button type={"primary"} onClick={handleClick}>
         open
       </Button>
-      <Button onClick={handleClick}>open</Button>
-      <div>{contextHolder}</div>
+      <Button onClick={handleClick}>login</Button>
+      <div>{JSON.stringify(user)}</div>
     </div>
   )
 }
